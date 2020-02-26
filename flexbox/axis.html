@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: absolute;
+            top: 50vh;
+            width: 100vw;
+            height: 5px;
+            background-color: lightcoral;
+        }
+
+        .main-label {
+            position: absolute;
+            top: calc(50vh - 30px);
+            left: calc(50vw - 120px);
+            color: lightcoral;
+            font-size: 20px;
+        }
+
+        .cross {
+            position: absolute;
+            left: 50vw;
+            width: 5px;
+            height: 100vh;
+            background-color: rgb(98, 194, 253);
+        }
+
+        .cross-label {
+            position: absolute;
+            top: calc(50vh - 90px);
+            left: calc(50vw - 60px);
+            color: rgb(98, 194, 253);
+            transform: rotate(270deg);
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-label">main axis</div>
+    <div class="main"></div>
+    <div class="cross-label">cross axis</div>
+    <div class="cross"></div>
+</body>
+
+</html>
