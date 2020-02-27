@@ -7,33 +7,49 @@
   <style>
     .father {
       display: grid;
-      grid-template-rows: 300px 120px;
-      grid-template-columns: 300px 500px;
+      grid-auto-rows: 200px;
       grid-gap: 10px;
-      grid-auto-columns: 60px;
-      grid-auto-flow: column;
+      grid-template-areas: "header header header"
+                           "content content sidebar"
+                           "content content sidebar"
+                           "footer footer footer";
+    }
+
+    .first {
+      grid-area: footer;
+      background-color : orange;
+    }
+
+    .second {
+      grid-area: sidebar;
+      background-color: yellowgreen;
+    }
+
+    .third {
+      grid-area: header;
+      background-color: blueviolet;
+    }
+
+    .fourth {
+      grid-area: content;
+      background-color: lightskyblue;
     }
 
     .box {
-      background-color: #42b883;
       display: flex;
       justify-content: center;
       align-items: center;
       color:white;
       font-size: 50px;
-    }
+  }
   </style>
 </head>
 <body>
   <div class="father">
-    <div class="box">1</div>
-    <div class="box">2</div>
-    <div class="box">3</div>
-    <div class="box">4</div>
-    <div class="box">5</div>
-    <div class="box">6</div>
-    <div class="box">7</div>
-    <div class="box">8</div>
+    <div class="first box">first</div>
+    <div class="second box">second</div>
+    <div class="third box">third</div>
+    <div class="fourth box">fourth</div>
   </div>
 </body>
 </html>
