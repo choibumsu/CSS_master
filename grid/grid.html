@@ -9,29 +9,22 @@
       display: grid;
       grid-auto-rows: 200px;
       grid-gap: 10px;
-      grid-template-areas: "header header header"
-                           "content content sidebar"
-                           "content content sidebar"
-                           "footer footer footer";
+      grid-template-rows: 2fr 1fr 2fr 1fr;
     }
 
     .first {
-      grid-area: footer;
       background-color : orange;
     }
 
     .second {
-      grid-area: sidebar;
       background-color: yellowgreen;
     }
 
     .third {
-      grid-area: header;
       background-color: blueviolet;
     }
 
     .fourth {
-      grid-area: content;
       background-color: lightskyblue;
     }
 
