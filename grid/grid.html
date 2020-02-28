@@ -8,9 +8,9 @@
   <style>
     .father {
       display: grid;
-      grid-auto-rows: 200px;
       grid-gap: 10px;
-      grid-template-rows: repeat(2, 1fr) repeat(2, 2fr);
+      /* grid-template-columns: minmax(400px, 2fr) repeat(3, 1fr); */
+      grid-template-columns: min-content repeat(3, 1fr);
     }
 
     .first {
@@ -41,7 +41,7 @@
 
 <body>
   <div class="father">
-    <div class="first box">first</div>
+    <div class="first box">first first first first first first</div>
     <div class="second box">second</div>
     <div class="third box">third</div>
     <div class="fourth box">fourth</div>
