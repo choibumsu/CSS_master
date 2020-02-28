@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,11 @@
       display: grid;
       grid-auto-rows: 200px;
       grid-gap: 10px;
-      grid-template-rows: 2fr 1fr 2fr 1fr;
+      grid-template-rows: repeat(2, 1fr) repeat(2, 2fr);
     }
 
     .first {
-      background-color : orange;
+      background-color: orange;
     }
 
     .second {
@@ -32,11 +33,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color:white;
+      color: white;
       font-size: 50px;
-  }
+    }
   </style>
 </head>
+
 <body>
   <div class="father">
     <div class="first box">first</div>
@@ -45,4 +47,5 @@
     <div class="fourth box">fourth</div>
   </div>
 </body>
+
 </html>
