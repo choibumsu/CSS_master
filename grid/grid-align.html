@@ -13,7 +13,7 @@
             grid-template-columns: repeat(5, 100px);
             background-color: beige;
             place-content: center;
-            place-items: center;
+            /* place-items: center; */
             height: 100vh;
         }
 
@@ -22,6 +22,11 @@
             align-items: center;
             justify-content: center;
         } */
+
+        .box:first-child {
+            justify-self: center;
+            align-self: center;
+        }
 
         .box:nth-child(even) {
             background-color: lightblue;
