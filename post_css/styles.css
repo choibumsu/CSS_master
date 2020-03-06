@@ -8,3 +8,19 @@
   margin-block: 0;
   color: var(--mainColor);
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* li:matches(:nth-child(even), .target) {
+  color: lightpink;
+} */
+
+li:not(.target) {
+  color: lightpink;
+}
