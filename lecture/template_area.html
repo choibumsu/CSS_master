@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .father {
+      display: grid;
+      grid-auto-rows: 200px;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, minmax(400px, 1fr)) 1fr;
+    }
+
+    .first {
+      background-color : orange;
+    }
+
+    .second {
+      background-color: yellowgreen;
+    }
+
+    .third {
+      background-color: blueviolet;
+    }
+
+    .fourth {
+      background-color: lightskyblue;
+    }
+
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+      font-size: 50px;
+  }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="first box">first</div>
+    <div class="second box">second</div>
+    <div class="third box">third</div>
+    <div class="fourth box">fourth</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+:root {
+    --mainMargin: calc((100vw - 1000px) / 2);
+    --navColor: lightgreen;
+    --navHeight: 60px;
+    --profileColor: lightblue;
+    --storiesColor: lightsalmon;
+    --controlBarColor: lightpink;
+    --feedContainerColor: beige;
+}
+
+@custom-media --lg-size (max-width: 1000px);
+@custom-media --md-size (max-width: 850px);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100vw;
+    height: var(--navHeight);
+    background-color: var(--navColor);
+    position: fixed;
+}
+
+main {
+    margin: 0 var(--mainMargin);
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgba(255, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.profile {
+    padding-top: var(--navHeight);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 250px;
+    background-color: var(--profileColor);
+}
+
+.stories {
+    background-color: var(--storiesColor);
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.control-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    background-color: var(--controlBarColor);
+    justify-content: center;
+}
+
+.feed-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--feedContainerColor);
+}
+
+.feed {
+    height: 300px;
+}
+
+
+@media(--lg-size) {
+    main {
+        margin : 0;
+    }
+}
+
+@media(--md-size) {
+    .profile {
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .feed {
+        height: 32vw;
+    }
+}

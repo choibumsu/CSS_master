@@ -1,0 +1,46 @@
+/* :root {
+    --listSize: 25px;
+    --listBorder: 1px solid lightblue;
+}
+
+ul {
+  --mainColor: #42b883;
+  list-style: none;
+}
+
+li {
+  font-size: var(--listSize);
+  color: var(--mainColor);
+  border: var(--listBorder);
+  width: min-content;
+}
+*/
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  margin-block: 0;
+  color: #42b883;
+}
+
+@custom-media --ipad-size (650px < width <= 850px);
+
+@media(--ipad-size) {
+  body {
+    background-color: beige;
+  }
+}
+
+ul {
+	list-style: none;
+	
+	& li {
+	  border: var(--listBorder);
+	  width: min-content;
+
+		& a {
+			font-size: var(--listSize);
+		  color: var(--mainColor);
+		}
+	}
+}
